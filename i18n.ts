@@ -1,0 +1,63 @@
+export type Language = 'en' | 'fr';
+
+export const LANGUAGES: { code: Language; label: string }[] = [
+  { code: 'en', label: 'English' },
+  { code: 'fr', label: 'Français' },
+];
+
+export const TRANSLATIONS = {
+  en: {
+    navHome: 'Home',
+    navHowItWorks: 'How It Works',
+    navCheckPrice: 'Check Price',
+    navFindCenter: 'Find Center',
+    navDashboard: 'Dashboard',
+    login: 'Login',
+    logout: 'Sign out',
+    heroTitle: 'Turn Your Waste To GreenKobo',
+    heroSubtitle: 'Snap your plastic, cans, glass or paper. Earn kobo. Clean West Africa.',
+    heroPrimary: "Start Scanning - It's Free",
+    heroSecondary: "Check Today's Price",
+    joinTitle: 'Choose how you want to join',
+    joinSellTitle: 'I Want To Sell Your Waste',
+    joinSellText: 'Snap your waste, get a price instantly, and cash out to Opay or your bank.',
+    joinSellButton: 'I Want To Sell Your Waste',
+    joinCenterTitle: 'I Am A Recycling Center',
+    joinCenterText: 'List your unit on the map, set your price per kg, and receive pickup requests.',
+    joinCenterButton: 'Register My Unit',
+    findCenterTitle: 'Find a recycling center near you',
+    searchCountry: 'Country',
+    searchCity: 'City or area',
+    searchPlaceholder: 'e.g. Bariga',
+    impactTitle: 'West Africa, cleaner every day',
+    languageLabel: 'Language',
+  },
+  fr: {
+    navHome: 'Accueil',
+    navHowItWorks: 'Comment ça marche',
+    navCheckPrice: 'Voir le prix',
+    navFindCenter: 'Trouver un centre',
+    navDashboard: 'Tableau de bord',
+    login: 'Connexion',
+    logout: 'Déconnexion',
+    heroTitle: 'Transformez Vos Déchets En GreenKobo',
+    heroSubtitle: 'Prenez vos déchets en photo : plastique, canettes, verre ou papier. Gagnez des kobo. Nettoyons l’Afrique de l’Ouest.',
+    heroPrimary: "Commencer le scan - C'est gratuit",
+    heroSecondary: "Voir le prix du jour",
+    joinTitle: 'Choisissez comment rejoindre',
+    joinSellTitle: 'Je veux vendre mes déchets',
+    joinSellText: 'Prenez vos déchets en photo, obtenez un prix immédiat et retirez vers Opay ou votre banque.',
+    joinSellButton: 'Je veux vendre mes déchets',
+    joinCenterTitle: 'Je suis un centre de recyclage',
+    joinCenterText: 'Inscrivez votre unité sur la carte, fixez votre prix au kg et recevez des demandes de collecte.',
+    joinCenterButton: 'Enregistrer mon unité',
+    findCenterTitle: 'Trouvez un centre de recyclage près de vous',
+    searchCountry: 'Pays',
+    searchCity: 'Ville ou quartier',
+    searchPlaceholder: 'ex. Bariga',
+    impactTitle: "L'Afrique de l'Ouest, plus propre chaque jour",
+    languageLabel: 'Langue',
+  },
+} as const;
+
+export type TranslationKey = keyof typeof TRANSLATIONS.en;

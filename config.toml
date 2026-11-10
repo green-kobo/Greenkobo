@@ -1,0 +1,2 @@
+[functions.scan-waste]
+verify_jwt = true
